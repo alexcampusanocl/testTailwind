@@ -1,4 +1,7 @@
 {
-    "editor.fontFamily": "'sf mono', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 16
+    "editor.fontFamily": "'SF mono', Hack, monospace",
+    "editor.fontSize": 14,
+    "editor.cursorStyle": "line-thin",
+    "editor.accessibilityPageSize": 14,
+    "editor.fontWeight": "100"
 }
