@@ -6,98 +6,104 @@
     <title>prueba de componente</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="relative flex min-h-screen sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10 flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12 ">
-        <h1 class="text-base font-bold text-xl font-['DM sans']">Items</h1>
+<body class="bg-slate-100">
+    <div class="container max-w-xl mx-auto py-6 px-6">
+        
 
+		<h3 class="text-xl">Listado de tus reservas</h3>
 
-        <div class="h-[133px] px-5 py-4 bg-white rounded-2xl flex-col justify-start items-start gap-4 inline-flex">
-            <div class="self-stretch justify-start items-start gap-3 inline-flex">
-                <div class="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-1 inline-flex">
-                    <div class="self-stretch text-zinc-800 text-base font-semibold font-['SF Pro'] leading-tight">Los Ministros Country Club</div>
-                    <div class="self-stretch justify-start items-start gap-3 inline-flex">
-                        <div class="text-gray-700 text-[13px] font-normal font-['SF Pro'] leading-[17px]">Tennis lessons</div>
-                        <div class="grow shrink basis-0 text-gray-700 text-[13px] font-normal font-['SF Pro'] leading-[17px]">Court 1</div>
+        <div class="pt-4 pb-5 px-5 flex w-full bg-white rounded-2xl shadow-sm gap-4 inline-flex max-w-xl mt-6">
+
+            <div class="grow shrink basis-0 self-stretch w-3/4">
+                <h3 class="text-lg font-medium">Los Ministros Country Club</h3>
+                <p class="font-medium text-blue-700 pb-1">Reservado por Francisco Bustamante</p>
+                <div class="flex flex-row gap-4 pb-1">
+                    <p class="font-medium text-neutral-600 text-sm">Pádel</p>
+                    <p class="font-medium text-neutral-600 text-sm">Cancha N°1</p>
+                </div>
+                <div class="flex flex-row gap-2 pb-1">
+                    <p class="font-medium text-neutral-600 text-sm">12:00</p>
+                    <span class="font-medium text-neutral-600 text-sm"> — 90 mins. — </span>
+                    <p class="font-medium text-neutral-600 text-sm">13:30</p>
+                </div>
+                <div class="flex flex-row gap-4 pb-1">
+                    <p class="font-bold text-neutral-900 text-lg">$34.000</p>
+                    <p class="font-medium text-lime-600 text-lg">Pagado</p>
+                </div>
+                <div class="flex flex-row gap-4 text-xs font-medium text-black">
+                    <p>Incluye Extras</p>
+                    <p>Seguro MetLife®</p>
+                </div>
+            </div>
+            <div class="flex-col w-1/4 text-right">
+                <h5 class="uppercase text-xs font-bold">Septiembre</h5>
+                <p class="text-sm text-neutral-500">Jueves</p>
+                <h2 class="text-3xl font-bold">23</h2>
+                <span class="bg-blue-700 text-white text-xs px-3 py-1 rounded-3xl inline-block mt-1">2 pers.</span>
+            </div>
+        </div> 
+
+        <!-- detalle de reserva -->
+        <p class="size-5"></p>
+        <h3 class="text-xl">detalle de tus reservas</h3>
+        
+        <div class="flex w-full bg-blue-600 text-white rounded-2xl shadow-sm gap-4 inline-flex max-w-xl mt-6">
+            
+            <div class="grow shrink basis-0 self-stretch w-3/4 pt-4 pb-5 px-5 ">
+                <div id="club" class=" pb-2">
+                    <h5 class="uppercase text-xs font-base text-blue-200">Nombre del club</h5>
+                    <h3 class="text-lg font-medium">Los Ministros Country Club</h3>
+                </div>
+                
+                <div class="flex flex-row gap-4 pb-4">
+                    <div id="deporte">
+                        <h5 class="uppercase text-xs font-base text-blue-200">deporte</h5>
+                        <p class="font-medium text-white text-base">Pádel</p>
                     </div>
-                    <div class="justify-start items-center gap-2.5 inline-flex">
-                        <div class="text-slate-600 text-[13px] font-normal font-['SF Pro'] leading-[17px]">09:30</div>
-                        <div class="text-slate-600 text-[13px] font-normal font-['SF Pro'] leading-[17px]">11:00</div>
-                    </div>
-                    <div class="justify-start items-start gap-1 inline-flex">
-                        <div class="text-zinc-800 text-[13px] font-semibold font-['SF Pro'] leading-[17px]">CLP 20.000</div>
-                        <div class="h-[17px] justify-start items-start flex">
-                            <div class="text-green-600 text-[13px] font-normal font-['SF Pro'] leading-[17px]">All paid</div>
-                        </div>
-                    </div>
-                    <div class="self-stretch justify-start items-start gap-3 inline-flex">
-                        <div class="text-right text-zinc-800 text-[10px] font-medium font-['SF Pro'] leading-[14px]">MetLife® Insurance</div>
+                    <div id="cancha">
+                        <h5 class="uppercase text-xs font-base text-blue-200">Cancha</h5>
+                        <p class="font-medium text-white text-base">Cancha N°1</p>
                     </div>
                 </div>
-                <div class="flex-col justify-start items-end gap-1 inline-flex">
-                    <div class="flex-col justify-start items-end flex">
-                        <div class="text-right text-zinc-800 text-[10px] font-bold font-['SF Pro'] uppercase leading-[14px]">November</div>
-                        <div class="flex-col justify-start items-end flex">
-                            <div class="text-right text-slate-600 text-[10px] font-medium font-['SF Pro'] leading-[14px]">Sun.</div>
-                            <div class="text-right text-zinc-800 text-[28px] font-bold font-['SF Pro'] leading-9">23</div>
+                <div class="pb-1">
+                    <div id="tiempo">
+                        <h5 class="uppercase text-xs font-base text-blue-200">Tiempo / duración</h5>
+                        <div class="datos flex flex-row gap-2">
+                            <p class="font-medium text-white text-base">12:00</p>
+                            <span class="font-medium text-white text-base"> — 90 mins. — </span>
+                            <p class="font-medium text-white text-base">13:30</p>
                         </div>
                     </div>
-                    <div class="px-2 py-1 bg-blue-600 rounded-lg justify-start items-center gap-1 inline-flex">
-                        <div class="text-white text-[10px] font-medium font-['SF Pro'] leading-[14px]">1</div>
-                    </div>
                 </div>
+            </div>
+
+            <div class="flex-col w-1/4 bg-blue-700 pt-4 pb-5 px-5 rounded-r-2xl">
+                <h5 class="uppercase text-xs font-medium text-blue-300">Fecha</h5>
+                <p class="text-sm ">Domingo</p>
+                <h2 class="text-4xl font-bold">23</h2>
+                <p class="font-base text-ellipsis overflow-hidden">Septiembre</p>
+                <p>2014</p>
             </div>
         </div>
 
-        DOS
 
-        <div class="w-96 rounded-2xl justify-start items-start inline-flex">
-            <div class="self-stretch pl-5 pr-4 pt-4 pb-5 bg-white flex-col justify-start items-start gap-3 inline-flex">
-                <div class="self-stretch h-10 flex-col justify-start items-start flex">
-                    <div class="text-[#828d98] text-xs font-semibold font-['SF Pro'] uppercase leading-tight">Club</div>
-                    <div class="text-[#1d242b] text-base font-semibold font-['SF Pro'] leading-tight">Club name</div>
-                </div>
-                <div class="self-stretch justify-start items-start gap-4 inline-flex">
-                    <div class="flex-col justify-start items-start inline-flex">
-                        <div class="text-[#828d98] text-xs font-semibold font-['SF Pro'] uppercase leading-tight">Sport</div>
-                        <div class="text-[#1d242b] text-base font-normal font-['SF Pro'] leading-tight">Sport</div>
-                    </div>
-                    <div class="grow shrink basis-0 flex-col justify-start items-start inline-flex">
-                        <div class="text-[#828d98] text-xs font-semibold font-['SF Pro'] uppercase leading-tight">Court</div>
-                        <div class="self-stretch text-[#1d242b] text-base font-normal font-['SF Pro'] leading-tight">Court name</div>
-                    </div>
-                </div>
-                <div class="self-stretch h-11 flex-col justify-start items-start gap-1 flex">
-                    <div class="text-[#828d98] text-xs font-semibold font-['SF Pro'] uppercase leading-tight">Time / Duration</div>
-                    <div class="self-stretch justify-center items-center gap-1.5 inline-flex">
-                        <div class="text-[#1d242b] text-base font-medium font-['SF Pro'] leading-tight">09:30</div>
-                        <div class="w-[117px] h-[17px] relative">
-                            <div class="h-[17px] px-2 left-[27px] top-0 absolute bg-white rounded-lg justify-center items-center inline-flex">
-                                <div class="text-center text-[#1d242b] text-[13px] font-normal font-['SF Pro'] leading-[17px]">90 Min.</div>
-                            </div>
-                        </div>
-                        <div class="text-[#1d242b] text-base font-medium font-['SF Pro'] leading-tight">99:99</div>
-                    </div>
-                </div>
+        <!-- detalle de reserva -->
+        <p class="size-5"></p>
+        <h3 class="text-xl">item deporte</h3>
+
+        <div class="flex w-full bg-white rounded-2xl shadow-sm gap-3 inline-flex max-w-xl mt-6 px-5 content-center">
+            
+            <div class=" self-stretch content-center w-12">
+                <img src="https://cdn-icons-png.flaticon.com/512/103/103956.png" width="40" alt="Deporte">
             </div>
-            <div class="w-[100px] self-stretch px-4 pt-4 pb-5 bg-[#eceef0] flex-col justify-start items-start inline-flex">
-                <div class="self-stretch text-[#828d98] text-xs font-semibold font-['SF Pro'] uppercase leading-tight">Date</div>
-                <div class="self-stretch h-[84px] flex-col justify-start items-start flex">
-                    <div class="text-[#1d242b] text-[10px] font-medium font-['SF Pro'] leading-[14px]">Sunday</div>
-                    <div class="text-[#1d242b] text-[28px] font-bold font-['SF Pro'] leading-9">23</div>
-                    <div class="self-stretch text-[#1d242b] text-[13px] font-normal font-['SF Pro'] leading-[17px]">September</div>
-                    <div class="self-stretch text-[#1d242b] text-[13px] font-normal font-['SF Pro'] leading-[17px]">2024</div>
-                </div>
+            <div class=" content-center grow flex-1 self-stretch pt-4 pb-5"><p class="font-medium text-slate-600">Nombre de deporte más largo que otro</p></div>
+            <div class=" content-center grow flex-1 self-stretch  pt-4 pb-5 text-right">
+                <span class="uppercase bg-pink-600 text-white text-[10px] px-3 py-1 rounded-3xl inline-block mt-1 text-ellipsis overflow-hidden">Precio exclusivo PRIME</span>
             </div>
+
         </div>
-        
-    
-        
-
-
-
-
-
 
     </div>
+
 </body>
 </html>

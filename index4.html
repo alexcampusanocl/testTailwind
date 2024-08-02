@@ -6,28 +6,37 @@
     <title>Prueba 4</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-	<div class="container mx-auto py-10 px-10 bg-slate-50">
+<body class="bg-slate-100">
+	<div class="container mx-auto py-6 px-6  max-w-xl">
 
-		<h1 class="text-4xl font-semibold mb-5">Choose a place</h1>
-		<h3 class="text-2xl">Available clubs list</h3>
+		<h1 class="text-4xl font-semibold mb-5">Elige un lugar</h1>
+		<h3 class="text-2xl">Lista de clubes disponibles</h3>
 		<ul class="mt-5">
-			<li class="bg-white rounded-xl pb-4 shadow-sm my-5">
-				<div class="mb-3">
-					<img src="https://campusano.cl/img/featured_pln.png" alt="O" class="w-full h-40 object-cover rounded-t-xl" loading="lazy">
+			<li class="bg-white rounded-xl pb-4 my-5 shadow-sm">
+				<div class="mb-3 relative">
+					<div class="absolute top-4 left-4">
+						<span class="bg-lime-300 text-black text-xs px-2 py-1 rounded-3xl inline-block mt-1">Acá escribimos la información importante que el club informa.</span>
+					</div>
+					<div class="absolute bottom-4 left-4">
+						<span class="bg-teal-500 text-white text-xs px-2 py-1 rounded-3xl inline-block mt-1">Solo socios</span>
+						<span class="bg-pink-600 text-white text-xs px-2 py-1 rounded-3xl inline-block mt-1">Prime descuentos en chancha</span>
+						<span class="bg-indigo-500 text-white text-xs px-2 py-1 rounded-3xl inline-block mt-1">Convenio Caja de compensación</span>
+					</div>
+					<span class="absolute top-4 right-4 bg-red-500 rounded-full p-2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/></svg>
+					</span>
+					<img src="https://cdn.pixabay.com/photo/2015/12/13/05/46/mannequin-1090714_1280.jpg" alt="O" class="w-full h-40 object-cover rounded-t-xl" loading="lazy">
 				</div>
 
-				<h4 class="text-xl px-5 font-medium">Planet Padel</h4>
-				<p class="text-neutral-500 px-5 font-light">Av. Los Ministros 1241, Maipú, RM, Chile</p>
-				<dl class="mt-2 text-xs px-5 font-medium flex items-center row-start-2 sm:mt-1 sm:row-start-3 md:mt-2.5 lg:row-start-2 ">
+				<h4 class="text-base px-5 font-medium">Los Ministros Country Club</h4>
+				<p class="text-neutral-500 px-5 font-regular">Av. Los Ministros 1241, Maipú, RM. (CL)</p>
+				<dl class="mt-2 text-xs px-5 font-medium flex items-center row-start-2 ">
 					<dt class="sr-only">Reviews</dt>
-					<dd class="text-orange-600 flex items-center dark:text-orange-400 mr-5">
-					  <svg width="24" height="24" aria-hidden="true" fill="none" class="mr-1 stroke-current dark:stroke-orange-500">
-						<path d="m12 5 2 5h5l-4 4 2.103 5L12 16l-5.103 3L9 14l-4-4h5l2-5Z"  stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-					  </svg>
+					<dd class="text-orange-600 flex items-center dark:text-orange-500 mr-5">
+						<svg  width="16" height="16" fill="orange" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero"/></svg>
 					  <span>4.89 <span class="text-slate-400 font-normal">(128)</span></span>
 					</dd>
-					<dt class="sr-only">Location</dt>
+					<dt class="sr-only">Distancia</dt>
 					<dd class="flex items-center text-neutral-400">
 					  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="mr-1 text-neutral-400 dark:text-neutral-500" aria-hidden="true">
 						<path d="M18 11.034C18 14.897 12 19 12 19s-6-4.103-6-7.966C6 7.655 8.819 5 12 5s6 2.655 6 6.034Z" />
@@ -37,15 +46,44 @@
 					</dd>
 				</dl>
 				<div class="px-5 mt-5 flex justify-between">
-					<button class="bg-blue-600 text-white text-md sm:text-sm py-2 px-10 rounded-3xl">Book here from $12.000</button>
+					<button class="bg-blue-600 text-white text-md sm:text-sm py-2 px-8 rounded-3xl">Reserva aquí desde $12.000</button>
 					<span class="bg-blue-100 text-blue-600 py-2 rounded-full px-4 text-xl font-mono font-semibold">i</span>
 				</div>
 			</li>
-
-			
-
-			
 		</ul>
+
+
+		<div class="bg-white rounded-xl pb-4 my-5 shadow-sm">
+			<div class="mb-3 relative">
+				<span class="absolute top-4 right-4 bg-red-500 rounded-full p-2">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/></svg>
+				</span>
+				<img src="https://cdn.pixabay.com/photo/2015/12/13/05/46/mannequin-1090714_1280.jpg" alt="O" class="w-full h-40 object-cover rounded-t-xl" loading="lazy">
+			</div>
+			<h4 class="text-base px-5 font-medium">Los Ministros Country Club</h4>
+			<p class="text-neutral-500 px-5 font-regular">Av. Los Ministros 1241, Maipú, RM. (CL)</p>
+		</div>
+	</div>
+
+	<div class="max-w-md mx-auto bg-blue-600 min-w-0">
+
+	
+		<div class="overflow-x-auto flex">
+
+			<div class="bg-white rounded-xl flex-none py-6 px-3 first:pl-6 last:pr-6">
+				<div class="flex flex-row items-center justify-center gap-3">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="red"><path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/></svg>
+					<div class="">
+						<h4 class="text-sm font-medium text-red-500">Los Ministros Country Club</h4>
+						<p class="text-slate-500 font-base text-xs">Maipú, RM. (CL)</p>
+					</div>
+				</div>
+			</div>
+
+			
+			
+	
+		</div>
 
 	</div>
     

@@ -1,7 +1,8 @@
 {
-    "editor.fontFamily": "'SF mono', Hack, monospace",
-    "editor.fontSize": 14,
+    "editor.fontFamily": "'Dank Mono', 'monolisa', cousine, 'SF mono', Hack, monospace",
+    "editor.fontSize": 16,
     "editor.cursorStyle": "line-thin",
     "editor.accessibilityPageSize": 14,
-    "editor.fontWeight": "100"
+    "editor.fontWeight": "100",
+    "chat.editor.fontWeight": "300"
 }
